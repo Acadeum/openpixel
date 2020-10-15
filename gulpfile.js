@@ -1,13 +1,13 @@
 // ---------- Configurations for your custom build of open pixel ---------- //
 
 // This is the header comment that will be included at the top of the "dist/openpixel.js" file
-var HEADER_COMMENT     = process.env.OPIX_HEADER_COMMENT || '// Open Pixel v1.2.0 | Published By Dockwa | Created By Stuart Yamartino | MIT License\n';
+var HEADER_COMMENT     = process.env.OPIX_HEADER_COMMENT || '// Acadeum Artemis\n';
 
 // This is where the compiled snippet and openpixel.js files will be dropped
 var DESTINATION_FOLDER = process.env.OPIX_DESTINATION_FOLDER || './dist';
 
 // The name of the global function and the cookie prefix that will be included in the snippet and is the client to fire off custom events
-var PIXEL_FUNC_NAME    = process.env.OPIX_PIXEL_FUNC_NAME || 'opix';
+var PIXEL_FUNC_NAME    = process.env.OPIX_PIXEL_FUNC_NAME || 'artemis';
 
 // The remote URL of the pixel.gif file that will be pinged by the browser to send tracking information
 var PIXEL_ENDPOINT     = process.env.OPIX_PIXEL_ENDPOINT || '/pixel.gif';
