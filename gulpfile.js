@@ -13,7 +13,7 @@ var PIXEL_FUNC_NAME    = process.env.OPIX_PIXEL_FUNC_NAME || 'artemis';
 var PIXEL_ENDPOINT     = process.env.OPIX_PIXEL_ENDPOINT || '/pixel.gif';
 
 // The core openpixel.min.js file that the snippet will loaded asynchronously into the browser
-var JS_ENDPOINT        = process.env.OPIX_JS_ENDPOINT || '/openpixel.js';
+var JS_ENDPOINT        = process.env.OPIX_JS_ENDPOINT || '/artemis.js';
 
 // The current version of your openpixel configuration
 var VERSION            = process.env.OPIX_VERSION || '1';
@@ -41,7 +41,7 @@ function openpixel() {
     './src/pixel.js',
     './src/setup.js',
   ])
-  .pipe(concat('openpixel.js'))
+  .pipe(concat('artemis.js'))
   .pipe(babel())
   .pipe(iife({
     useStrict: false,
