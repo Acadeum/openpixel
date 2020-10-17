@@ -10,7 +10,7 @@ var DESTINATION_FOLDER = process.env.OPIX_DESTINATION_FOLDER || './dist';
 var PIXEL_FUNC_NAME    = process.env.OPIX_PIXEL_FUNC_NAME || 'artemis';
 
 // The remote URL of the pixel.gif file that will be pinged by the browser to send tracking information
-var PIXEL_ENDPOINT     = process.env.OPIX_PIXEL_ENDPOINT || '/pixel.gif';
+var PIXEL_ENDPOINT     = process.env.OPIX_PIXEL_ENDPOINT || 'https://artemis.acadeum.com/artemis.gif';
 
 // The core openpixel.min.js file that the snippet will loaded asynchronously into the browser
 var JS_ENDPOINT        = process.env.OPIX_JS_ENDPOINT || '/artemis.js';
